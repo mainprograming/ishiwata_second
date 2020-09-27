@@ -11,7 +11,11 @@
  background: linear-gradient(transparent 50%, yellow 50%);
 }
 
-.top-contents ,.recommend ,.study ,.introduction ,.reason ,.movie-contents {
+.res-table {
+  display: none;
+}
+
+.top-contents ,.recommend,.introduction ,.seminer-contents {
  width: 70%;
  margin: 0 auto 30px;
 }
@@ -109,7 +113,6 @@
 }
 
 .top-content02 span {
-  font-size: 40px;
   font-size: 4rem;
   position: absolute;
   z-index: 1;
@@ -245,10 +248,6 @@
 
 .recommend-content li {
  padding-bottom: 20px;
-}
-
-.recommend img {
- width: 100%;
 }
 
 .introduction-contents {
