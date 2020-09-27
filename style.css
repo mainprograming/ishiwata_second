@@ -1,0 +1,560 @@
+* {
+ text-decoration: none;
+ list-style: none;
+}
+
+.red {
+ color: red;
+}
+
+.underline {
+ background: linear-gradient(transparent 50%, yellow 50%);
+}
+
+.top-contents ,.recommend ,.study ,.introduction ,.reason ,.movie-contents {
+ width: 70%;
+ margin: 0 auto 30px;
+}
+
+.top-content01 ,.top-content02 ,.top-content03  {
+  padding: 50px 30px;
+}
+
+.top-content01 {
+ background-image: url('https://raw.githubusercontent.com/mainprograming/ishiwatari_first/master/image/top-haikei.jpeg');
+ background-size: cover;
+}
+
+.top-content01 h1 {
+  font-size: 50px;
+  text-shadow: #fff 2px 0, #fff -2px 0, #fff 0 -2px, #fff 0 2px, #fff 2px 2px, #fff -2px 2px, #fff 2px -2px, #fff -2px -2px, #fff 1px 2px, #fff -1px 2px, #fff 1px -2px, #fff -1px -2px, #fff 2px 1px, #fff -2px 1px, #fff 2px -1px, #fff -2px -1px, rgba(0, 0, 0, .5) 3px 3px 3px;
+}
+
+.top-content01 h2 {
+ color: blue;
+ text-decoration: underline;
+  text-align: center;
+  font-size: 64px;
+  margin: 50px 0;
+  position: relative;
+  -webkit-box-reflect: below -10px -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0) 10%,rgba(0, 0, 0, 0.6));
+  text-shadow: #fff 2px 0, #fff -2px 0, #fff 0 -2px, #fff 0 2px, #fff 2px 2px, #fff -2px 2px, #fff 2px -2px, #fff -2px -2px, #fff 1px 2px, #fff -1px 2px, #fff 1px -2px, #fff -1px -2px, #fff 2px 1px, #fff -2px 1px, #fff 2px -1px, #fff -2px -1px, rgba(0, 0, 0, .5) 3px 3px 3px;
+}
+
+.top-content01 h3 {
+  text-align: center;
+  font-size: 100px;
+  margin: 140px 0 40px;
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+  padding: 1rem 2rem;
+  color: #fff;
+  background: #000;
+}
+
+.top-content01 h3 span {
+  background-image: -webkit-linear-gradient(315deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
+  background-image: linear-gradient(135deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.top-content01 h4 {
+  position: relative;
+  padding-left: 25px;
+  font-size: 36px;
+  text-shadow: #fff 2px 0, #fff -2px 0, #fff 0 -2px, #fff 0 2px, #fff 2px 2px, #fff -2px 2px, #fff 2px -2px, #fff -2px -2px, #fff 1px 2px, #fff -1px 2px, #fff 1px -2px, #fff -1px -2px, #fff 2px 1px, #fff -2px 1px, #fff 2px -1px, #fff -2px -1px, rgba(0, 0, 0, .5) 3px 3px 3px;
+}
+
+.top-content01 h4:before {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 15px transparent;
+  border-bottom: solid 15px rgb(119, 195, 223);
+}
+
+.top-content01 h4:after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 10px;
+  width: 100%;
+  border-bottom: solid 3px rgb(119, 195, 223);
+}
+
+.top-content02 p {
+  position: relative;
+  overflow: hidden;
+  padding: 1.5rem 2rem 1.5rem 130px;
+  border: 2px solid #000099;
+  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.top-content02 p:before {
+  position: absolute;
+  top: -150%;
+  left: -100px;
+  width: 200px;
+  height: 300%;
+  content: '';
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+  background: #000099;
+}
+
+.top-content02 span {
+  font-size: 40px;
+  font-size: 4rem;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: block;
+  padding-top: 3px;
+  padding-left: 16px;
+  color: #fff;
+}
+
+.top-content03 {
+  background-color: rgb(245,245,245);
+  text-align: center;
+}
+
+.top-content03 h1 {
+  text-align: center;
+  position: relative;
+  line-height: 1.4;
+  padding:0.25em 1em;
+  display: inline-block;
+  top:0;
+  font-size: 25px;
+}
+
+.top-content03 h1:before, .top-content03 h1:after {
+  position: absolute;
+  top: 0;
+  content:'';
+  width: 8px;
+  height: 100%;
+  display: inline-block;
+}
+
+.top-content03 h1:before {
+  border-left: solid 3px black;
+  border-top: solid 3px black;
+  border-bottom: solid 3px black;
+  left: 0;
+}
+
+.top-content03 h1:after {
+  content: '';
+  border-top: solid 3px black;
+  border-right: solid 3px black;
+  border-bottom: solid 3px black;
+  right: 0;
+}
+
+.top-content03 h2 {
+  text-align: center;
+  padding: 30px 0 0 0;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+  font-size: 20px;
+}
+
+.top-content03 h2:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: black;
+  border-radius: 2px;
+}
+
+.top-content03 p {
+  text-align: left;
+  margin-top: 30px;
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.seminer-img {
+  margin-top: 30px;
+}
+
+.seminer-img h3 {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.seminer-img img {
+  width: 100%;
+}
+
+.contents-head {
+ color: white;
+ background-color: blue;
+ text-align: center;
+ font-size: 34px;
+ letter-spacing: 8px;
+ padding: 30px 0;
+ position: relative;
+}
+
+.contents-head::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  border-style: solid;
+  border-color: blue transparent transparent transparent;
+  border-width: 20px 20px 0 20px;
+}
+
+.recommend {
+  border: 2px solid black;
+}
+
+.recommend-content {
+ margin: 0 auto;
+ font-size: 24px;
+ width: 70%;
+ padding: 50px 0;
+}
+
+.fa-check-square {
+ color: #003399;
+ padding-right: 20px;
+}
+
+.recommend-content li {
+ padding-bottom: 20px;
+}
+
+.recommend img {
+ width: 100%;
+}
+
+.introduction-contents {
+ padding: 50px 30px;
+ display: flex;
+ border: 2px solid black;
+}
+
+.introduction-contents img {
+ border-radius: 50%;
+ width: 26%;
+ height: 26%;
+ margin-right: 50px;
+}
+
+.introduction-content {
+ width: 70%;
+}
+
+.introduction-content h1 {
+ text-align: center;
+ width: 10%;
+ color: white;
+ background-color: blue;
+ padding: 10px 20px;
+ border-radius: 50px;
+ margin-bottom: 20px;
+}
+
+.introduction-content h2 {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 1em 0;/*上下の余白*/
+  margin-bottom: 1em;
+  border-top: solid 3px #364e96;/*上線*/
+  border-bottom: solid 3px #364e96;/*下線*/
+}
+
+.introduction-content ruby {
+ display: inline-block;
+ font-size: 26px;
+ margin-bottom: 20px;
+}
+
+.introduction-content p {
+ font-size: 18px;
+ padding-bottom: 10px;
+ line-height: 26px;
+}
+
+.seminer-contents {
+  margin: 0 auto;
+  width: 70%;
+  background-image:linear-gradient(-45deg, #f9f8f7 25%, #ffffff 25%, #ffffff 50%, #f9f8f7  50%, #f9f8f7 75%, #ffffff 75%, #ffffff);
+}
+
+.seminer-content {
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#special ,#special02 {
+  background-color: white;
+  color: #000;
+  line-height: 36px;
+  display: inline-block;
+  font-size: 24px;
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+  position: relative;
+  padding: 1.5rem 2rem;
+  -webkit-box-shadow: 0 2px 14px rgba(0, 0, 0, .9);
+  box-shadow: 0 2px 24px rgba(0, 0, 0, .9);
+  transition: .5s;
+}
+
+#special:hover ,#special02:hover{
+  opacity: 0.5;
+}
+
+#special:before,
+#special:after,
+#special02::before,
+#special02:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  content: '';
+  background-image: -webkit-linear-gradient(315deg, #704308 0%, #ffce08 40%, #e1ce08 60%, #704308 100%);
+  background-image: linear-gradient(135deg, #704308 0%, #ffce08 40%, #e1ce08 60%, #704308 100%);
+}
+
+#special:before,
+#special02::before {
+  top: 0;
+}
+
+#special:after,
+#special02::after{
+  bottom: 0;
+}
+
+.special-contents ,.early-contents {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  width: 100%;
+}
+
+.special-content ,.early-content{
+  width: 45%;
+  display: inline-block;
+  margin: 20px;
+}
+
+.special-content h1 ,.early-content h1 {
+  color: white;
+  background-color: #000099;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 26px;
+}
+
+.special-content p ,.early-content p{
+  border: 1px solid black;
+  background-color: white;
+  padding: 20px;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+#early,
+#early02 {
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+  background-color: white;
+  color: #000;
+  line-height: 36px;
+  display: inline-block;
+  font-size: 24px;
+  position: relative;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, .9);
+  transition: .5s;
+}
+
+#early:hover,
+#early02:hover {
+  opacity: 0.5;
+}
+
+#early:before,
+#early:after,
+#early02::before,
+#early02::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  content: '';
+  background-image: -webkit-linear-gradient(right, #30cfd0 0%, #330867 100%);
+  background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);
+}
+
+#early:before,
+#early02::before {
+  top: 0;
+}
+
+#early:after,
+#early02::after {
+  bottom: 0;
+}
+
+.early-content h2{
+  color: white;
+  background-color: #5507FF;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 26px;
+}
+
+.seminer-explanation{
+  width: 70%;
+  margin: 0 auto;
+  background-image:linear-gradient(-45deg, #f9f8f7 25%, #ffffff 25%, #ffffff 50%, #f9f8f7  50%, #f9f8f7 75%, #ffffff 75%, #ffffff);
+}
+
+.seminer-explanation-contents h1, .explanation h2{
+  width: 80%;
+  padding: 1rem 2rem;
+  color: #fff;
+  background: #3333FF;
+  -webkit-box-shadow: 5px 5px 0 #003399;
+  box-shadow: 5px 5px 0 #003399;
+  margin: 10px auto;
+  font-size: 26px;
+}
+
+.seminer-explanation-contents h2 {
+  text-align: left;
+}
+
+.seminer-explanation-contents {
+  padding-top: 30px;
+}
+
+.seminer-explanation-btn {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#special02, #early02 {
+  display: inline-block;
+  width: 40%;
+  font-size: 16px;
+  line-height: 30px;
+  border-radius: 5px;
+  margin: 30px 0;
+}
+
+table {
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+table td, table th{
+  border: 1px solid black;
+  padding: 5px;
+  line-height: 20px;
+  background-color: white;
+  color: black;
+}
+
+.explanation p {
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid black;
+  width: 95%;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.seminer-explanation-document {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.seminer-explanation-document a {
+  background-color: white;
+  color: #000;
+  line-height: 36px;
+  display: inline-block;
+  font-size: 24px;
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+  position: relative;
+  padding: 1.5rem 2rem;
+  -webkit-box-shadow: 0 2px 14px rgba(0, 0, 0, .9);
+  box-shadow: 0 2px 24px rgba(0, 0, 0, .9);
+  transition: .5s;
+}
+
+.seminer-explanation-document a:hover{
+  opacity: 0.5;
+}
+
+.seminer-explanation-document a:before,
+.seminer-explanation-document a:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  content: '';
+  background-image: -webkit-linear-gradient(315deg, #990000 0%, #CC0000 40%, #FF0000 60%, #990000 100%);
+  background-image: linear-gradient(135deg, #990000 0%, #CC0000 40%, #FF0000 60%, #990000 100%);
+}
+
+.seminer-explanation-document a:before,
+.seminer-explanation-document a::before {
+  top: 0;
+}
+
+.seminer-explanation-document a:after,
+.seminer-explanation-document a::after{
+  bottom: 0;
+}
+
+.seminer-explanation-document p {
+  margin: 30px 0;
+  line-height: 26px;
+}
+
+.seminer-explanation-document span {
+  position: relative;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.seminer-explanation-document span:before {
+  position: absolute;
+  bottom: 24px;
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 3px;
+  content: '';
+  border-radius: 3px;
+  background: #000;
+}
