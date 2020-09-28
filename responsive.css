@@ -6,7 +6,7 @@
   }
 
   .top-content01 ,.top-content02 ,.top-content03  {
-    padding: 50px 30px;
+    padding: 30px;
   }
 
   .top-content01 h1 {
@@ -31,7 +31,7 @@
   .top-content02 p {
     padding: 1rem 2rem 1rem 130px;
     margin-bottom: 50px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 30px;
   }
 
@@ -39,25 +39,28 @@
     font-size: 3rem;
   }
 
-  .top-content03 h1 {
+  .top-content03_head {
+    font-size: 20px;
+  }
+
+  .top-content03_sub {
+    font-size: 14px;
+  }
+
+  .seminer-text h1 {
     line-height: 1.4;
     font-size: 16px;
   }
 
-  .top-content03 h2 {
-    padding: 50px 0 10px 0;
-    font-size: 11px;
-  }
-
-  .top-content03 h2:before {
-    bottom: -5px;
-    height: 3px;
-  }
-
-  .top-content03 p {
+  .seminer-text p {
     margin-top: 20px;
     font-size: 14px;
     line-height: 30px;
+  }
+
+  .seminer-text h2 {
+    padding: 5px 0;
+    font-size: 13px;
   }
 
   .seminer-img h3 {
@@ -78,61 +81,69 @@
    font-size: 18px;
   }
 
-  .introduction-contents {
-   text-align: center;
-   padding: 30px 0;
-   display: block;
-   border: none;
-   border-bottom: 2px solid black;
+  .introduction {
+    text-align: center;
   }
 
-  .introduction-contents img {
-   width: 60%;
-   height: 60%;
-   margin-right: 0;
-   margin: 30px auto;
+  .introduction-content_top {
+    padding: 50px 0 0 0;
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .introduction-content_top img {
+    width: 50%;
+    height: 50%;
+    margin: 20px auto;
+  }
+
+  .introduction-content_top h1,.introduction-content h1 {
+    text-align: center;
+    width: 20%;
+    padding: 10px 20px;
+    margin: 0 auto 20px;
+  }
+
+  .introduction-content_top h2 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 1em 0;/*上下の余白*/
+    margin: 0 auto 1em;
   }
 
   .introduction-content {
-   width: 100%;
-  }
-
-  .introduction-content h1 {
-   width: 80%;
-   padding: 10px 20px;
-   margin: 0 auto 20px;
-  }
-
-  .introduction-content h2 {
-    font-size: 14px;
-    line-height: 30px;
-    margin-bottom: 3em;
-  }
-
-  .introduction-content ruby {
-   font-size: 22px;
-   margin: 20px 0 30px;
+    padding: 30px;
   }
 
   .introduction-content p {
-   font-size: 16px;
-   padding-bottom: 10px;
-   line-height: 26px;
+    font-size: 15px;
   }
 
   .seminer-contents {
     width: 100%;
   }
 
+  .seminer-content {
+    padding: 30px 0px;
+    margin: 30px auto;
+    text-align: center;
+}
+
   #special ,#special02 {
     font-size: 12px;
   }
 
-  .special-contents ,.early-contents {
-    width: 100%;
+  #special, #early {
+    width: 80%;
   }
 
-  .special-content ,.early-content{
+  .special-contents ,
+  .early-contents ,
+  .special-content ,
+  .early-content {
     width: 100%;
   }
 
@@ -143,6 +154,7 @@
 
   .seminer-explanation{
     width: 100%;
+    border: none;
   }
 
   .seminer-explanation-contents h1, .explanation h2{
@@ -154,52 +166,59 @@
     font-size: 13px;
   }
 
-  table {
-    display: none;
+  .table {
+    display: inline-block;
+    width: 100%;
+    margin: 30px auto 0;
+    justify-content: space-between;
   }
 
-  .res-table {
-  display: block;
+  .table01, .table02 {
+    width: 90%;
+    margin: 10px auto;
   }
 
-  .res-table01 h3 ,.res-table02 h3 {
-   margin: 30px auto 0;
-   text-align: center;
-   width: 90%;
-   font-size: 15px;
-   line-height: 26px;
-  }
+.table01-head {
+  padding: 22px 10px;
+}
 
-  .res-table01-text ,.res-table02-text {
-   border: 1px solid black;
-   width: 90%;
-   margin: 0 auto;
-   padding: 1rem 0;
-   border: none;
-   border-top: 2px dashed #000;
-   border-bottom: 2px dashed #000;
-  }
+.table01-head h3,.table02-head h3 {
+  width: 20%;
+}
 
-  .explanation p {
-   font-size: 11px;
-  }
+.table01-head h4,.table02-head h4 {
+  width: 100%;
+}
 
-  .res-table01-text p {
-   font-size: 12px;
-   border: none;
-   line-height: 25px;
-  }
+.table01-text ,.table02-text {
+  padding: 15px;
+  background-color: rgb(243,243,243,0.6);
+  border-radius: 5px;
+}
 
-  .seminer-explanation-document a {
-    width: 80%;
-    line-height: 30px;
-    font-size: 16px;
-    padding: 1.5rem 2rem;
-  }
+.table01-text {
+  line-height: 30px;
+}
 
-  .seminer-explanation-document p {
-    font-size: 11px;
-  }
+.table02-text {
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.explanation-sub {
+  width: 90%;
+}
+
+.explanation-sub p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.seminer-explanation-document p {
+  margin: 30px 0;
+  line-height: 30px;
+  font-size: 12px;
+}
 
 }
 
