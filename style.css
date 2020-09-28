@@ -1,6 +1,8 @@
 * {
  text-decoration: none;
  list-style: none;
+ font-family: "Meiryo UI","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","Osaka",sans-serif;
+ font-weight: 100;
 }
 
 .red {
@@ -9,10 +11,6 @@
 
 .underline {
  background: linear-gradient(transparent 50%, yellow 50%);
-}
-
-.res-table {
-  display: none;
 }
 
 .top-contents ,.recommend,.introduction ,.seminer-contents {
@@ -129,7 +127,7 @@
   text-align: center;
 }
 
-.top-content03 h1 {
+.top-content03_head {
   text-align: center;
   position: relative;
   line-height: 1.4;
@@ -139,7 +137,7 @@
   font-size: 25px;
 }
 
-.top-content03 h1:before, .top-content03 h1:after {
+.top-content03_head:before, .top-content03_head:after {
   position: absolute;
   top: 0;
   content:'';
@@ -148,14 +146,14 @@
   display: inline-block;
 }
 
-.top-content03 h1:before {
+.top-content03_head:before {
   border-left: solid 3px black;
   border-top: solid 3px black;
   border-bottom: solid 3px black;
   left: 0;
 }
 
-.top-content03 h1:after {
+.top-content03_head:after {
   content: '';
   border-top: solid 3px black;
   border-right: solid 3px black;
@@ -163,7 +161,7 @@
   right: 0;
 }
 
-.top-content03 h2 {
+.top-content03_sub {
   text-align: center;
   padding: 30px 0 0 0;
   position: relative;
@@ -172,7 +170,7 @@
   font-size: 20px;
 }
 
-.top-content03 h2:before {
+.top-content03_sub:before {
   content: '';
   position: absolute;
   bottom: -15px;
@@ -186,11 +184,27 @@
   border-radius: 2px;
 }
 
-.top-content03 p {
+.seminer-text h1 {
+  font-size: 24px;
+  text-align: left;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  border-left: 4px solid red;
+}
+
+.seminer-text p {
   text-align: left;
   margin-top: 30px;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 40px;
+}
+
+.seminer-text h2 {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 30px;
+  text-decoration: underline;
 }
 
 .seminer-img {
@@ -241,35 +255,36 @@
  padding: 50px 0;
 }
 
+.recommend-content li {
+ padding-bottom: 20px;
+}
+
 .fa-check-square {
  color: #003399;
  padding-right: 20px;
 }
 
-.recommend-content li {
- padding-bottom: 20px;
+.introduction {
+  background: linear-gradient(white 40%, #CCFFFF 80%, #0099FF 100%);
 }
 
-.introduction-contents {
- padding: 50px 30px;
+.introduction-content_top {
+ padding: 50px 10px;
  display: flex;
- border: 2px solid black;
+ width: 100%;
+ margin-left: 70px;
 }
 
-.introduction-contents img {
+.introduction-content_top img {
  border-radius: 50%;
  width: 26%;
  height: 26%;
  margin-right: 50px;
 }
 
-.introduction-content {
- width: 70%;
-}
-
-.introduction-content h1 {
+.introduction-content_top h1,.introduction-content h1 {
  text-align: center;
- width: 10%;
+ width: 20%;
  color: white;
  background-color: blue;
  padding: 10px 20px;
@@ -277,7 +292,7 @@
  margin-bottom: 20px;
 }
 
-.introduction-content h2 {
+.introduction-content_top h2 {
   font-size: 20px;
   line-height: 30px;
   padding: 1em 0;/*上下の余白*/
@@ -286,10 +301,14 @@
   border-bottom: solid 3px #364e96;/*下線*/
 }
 
-.introduction-content ruby {
+.introduction-content_top ruby {
  display: inline-block;
  font-size: 26px;
  margin-bottom: 20px;
+}
+
+.introduction-content {
+  padding: 30px;
 }
 
 .introduction-content p {
@@ -433,7 +452,7 @@
 .seminer-explanation{
   width: 70%;
   margin: 0 auto;
-  background-image:linear-gradient(-45deg, #f9f8f7 25%, #ffffff 25%, #ffffff 50%, #f9f8f7  50%, #f9f8f7 75%, #ffffff 75%, #ffffff);
+  border: 2px solid black;
 }
 
 .seminer-explanation-contents h1, .explanation h2{
@@ -469,32 +488,74 @@
   margin: 30px 0;
 }
 
-table {
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-
-table td, table th{
-  border: 1px solid black;
-  padding: 5px;
-  line-height: 20px;
-  background-color: white;
-  color: black;
-}
-
-.explanation p {
-  font-size: 20px;
-  text-align: center;
-  border: 1px solid black;
+.table {
+  display: flex;
   width: 95%;
-  margin: 10px auto;
-  padding: 5px;
+  margin: 50px auto 0;
+  justify-content: space-between;
+}
+
+.table01  {
+  width: 40%;
+}
+
+.table02 {
+  width: 59%;
+}
+
+.table01-head ,.table02-head {
+  display: flex;
+  font-size: 18px;
+  background-color: #FFCC33;
+  line-height: 26px;
+  padding: 10px;
+  background-color: #FFD700;
+  border: 3px double #FF8C00;
+  justify-content: space-between;
+  color: #000099;
+}
+
+.table01-head {
+  padding: 22px 10px;
+}
+
+.table01-head h3,.table02-head h3 {
+  width: 20%;
+}
+
+.table01-head h4,.table02-head h4 {
+  width: 100%;
+}
+
+.table01-text ,.table02-text {
+  padding: 15px;
+  background-color: rgb(243,243,243,0.6);
+  border-radius: 5px;
+}
+
+.table01-text {
+  line-height: 47px;
+}
+
+.table02-text {
+  line-height: 26px;
+}
+
+.explanation-sub {
+  text-align: center;
+  margin: 5px auto 30px;
+  width: 95%;
+}
+
+.explanation-sub p {
+  padding: 10px 0;
+  margin: 5px 0;
+  background-color: rgb(243,243,243,0.6);
+  font-size: 20px;
 }
 
 .seminer-explanation-document {
   text-align: center;
-  margin: 30px 0;
 }
 
 .seminer-explanation-document a {
@@ -549,7 +610,7 @@ table td, table th{
 
 .seminer-explanation-document span:before {
   position: absolute;
-  bottom: 24px;
+  bottom: 20px;
   left: calc(50% - 10px);
   width: 20px;
   height: 3px;
@@ -557,3 +618,4 @@ table td, table th{
   border-radius: 3px;
   background: #000;
 }
+
